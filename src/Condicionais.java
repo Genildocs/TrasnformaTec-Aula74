@@ -11,12 +11,16 @@ public class Condicionais {
         if(hora < 12){
             System.out.println("Bom dia, sao " + hora + " horas da manha!");
             System.out.println("Hora de acordar!");
-        } else if (hora >= 12 && hora < 17) {
+        } else if (hora >= 12 && hora <= 17) {
             System.out.println("Boa Tarde, sao " + hora + " horas da tarde.");
             System.out.println("Vamos lanchar!");
-        }else{
+        }else if (hora >= 18 && hora < 24) {
             System.out.println("Boa noite, sao "  + hora + " horas da noite.");
             System.out.println("Vamos Jantar!");
+
+        }else{
+            System.out.println("Horario invalido!");
+
         } scanner.close();
     }
 }
